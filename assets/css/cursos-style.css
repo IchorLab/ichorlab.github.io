@@ -1,0 +1,135 @@
+/*----------------------------------------------------------*/
+/*-----------HOJA DE ESTILOS PARA CURSOS.HTML---------------*/
+/*----------------------------------------------------------*/
+
+.footer{
+  background-color: rgba(0,0,0,0.8);
+}
+.social-icons{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.faicon{
+  color: white;
+  text-shadow: 2px 2px 10px blue;
+}
+.goicon{
+  color: white;
+  text-shadow: 2px 2px 10px red;
+}
+.faicon:hover{
+  color: blue;
+  text-shadow: 0 0 0;
+}
+.goicon:hover{
+  color: red;
+  text-shadow: 0 0 0;
+}
+.ai:link {
+  text-decoration: none;
+   color: white;
+ }
+.ai:visited {
+  text-decoration: none; 
+  color: white;
+}
+.ai:active {
+  text-decoration: none;
+   color: white;
+}
+.ai:hover {
+  text-decoration: none;
+   color: #578EFF;
+}
+.container-fluid{
+  padding-left: 0px;
+}
+.navleft{
+  height: 100vh; 
+  background-color: rgba(0,0,0,0.8);
+  margin-left: 0px;
+}
+@media(min-width: 767px) {
+  .navleft{
+    position: fixed;
+  }
+  .cont{
+    margin-left: 35%;
+  }
+}
+@media(min-width: 991px) {
+  .navleft{
+    position: static;
+  }
+  .cont{
+    margin-left:0%;
+  }
+}
+.topIcon{
+  margin-right: 10px;
+}
+.nav-item{
+  height: 60px;
+  margin-top: 10px;
+}
+.nav-item > a {
+  color: white;
+  font-size: 1.1rem;
+}
+.card-img-top{
+  height: 40vh;
+  width: 100%;
+}
+.img{
+  height: 100px;
+  width: 100px;
+  margin-top: -50px;
+}
+.btn-suc{
+  background-color: rgba(0,0,0,0.8);
+}
+.btn-suc-ins{
+  background-color: rgba(0,0,0,0.8);
+  cursor: pointer;
+  color: white;
+}
+.btn-suc-ins:hover{
+  width: 30%;
+  color: #F4D03F;
+}
+.btnMod: visited{
+  color: white;
+}
+.btnMod: active{
+  color: white;
+}
+.btnMod:link {
+  color: white;
+}
+.btnMod:hover {
+  width: 90%;
+  color: #F4D03F;
+}
+.form-ins{
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: solid 2px black;
+  border-radius: 15px;
+}
+.text-suggestion{
+  resize: none;
+  overflow-y: auto;
+}
+.btn-send{
+  width: 200px;
+  color: white;
+  margin-left: 40%;
+}
+.btn-send:hover{
+  cursor: pointer;
+  color: #F4D03F;
+  width: 220px;
+  margin-left: 39%;
+}

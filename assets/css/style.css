@@ -1,0 +1,14 @@
+.slider{
+  background: url("img/bg-3.png");
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+.btnHover:hover{
+  cursor: pointer;
+}
+@media (max-width: 768px) { 
+    .btnHover{
+        margin-top: 2vh;
+    }
+}
