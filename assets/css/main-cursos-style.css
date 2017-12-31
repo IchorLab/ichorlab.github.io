@@ -169,10 +169,16 @@
   margin-top: 15px;
 }
 .lastAppend{
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.05);
 }
 .cardCourses{
   width: 20rem;
+}
+.imgadvertisements{
+  margin-top: 5%;
+}
+.advertisements{
+  margin-left: 5%;
 }
 .cardImg{
   width: 100%;
