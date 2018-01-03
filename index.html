@@ -24,6 +24,14 @@
   </head>
   <body>
 
+
+    <!-- Start preloader-->
+    <div class="container-loader" id="container-loader">
+        <div class="preload" id="loader"></div>
+    </div>
+    <!-- End Preloader -->
+
+
     <!-- Start navbar -->
       <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +73,7 @@
     <!-- End navbar -->
 
 
-    <!-- Start Slider -->
+    <!-- Start header -->
     <div id="slider" class="container-fluid slider text-white" >
       <br><br>
       <div class="text-center sliderText">
@@ -80,13 +88,17 @@
         <a href="#description" class="downLink"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i></a>
       </div>
     </div>
-    <!-- End slider -->
+    <!-- End header -->
 
+
+    <!-- Start Header (Mobile) -->
     <div id="header-mobile" class="header-mobile text-center" >
       <div>
           <img src="assets/img/main/freaklabcoursesmobile.png" alt="" class="img-fluid">
       </div>
     </div>
+    <!-- End Header (Mobile) -->
+
 
     <!-- Start description-->
     <section id="description">
@@ -320,15 +332,17 @@
     </footer>
     <!-- End footer -->
 
-    
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="assets/js/jquery-3.2.1.js"></script>
     <script src="assets/js/tether.js"></script>
-   <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
    <script>
+
       $(document).ready(function(){
+        $("#container-loader").fadeOut("slow");
+        
         var slider = $("#slider");
         var headerMobile = $("#header-mobile");
         var width = $(window).width();
