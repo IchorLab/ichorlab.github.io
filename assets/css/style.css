@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
 }
-.btnHover:hover{
+.btn-hover:hover{
   cursor: pointer;
 }
 @media (max-width: 768px) { 

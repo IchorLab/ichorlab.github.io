@@ -21,7 +21,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main-cursos-style.css">
     <!-- Switch Fonts -->
     <link rel="stylesheet" href="assets/font/css/font-awesome.css">
-
   </head>
   <body>
 
@@ -57,7 +56,7 @@
               </a>
             </li>
           </ul>
-          <form class="topmenusearch" id="btn-search">
+          <form class="topmenusearch" id="btn-search" class="btn-search">
               <input placeholder="Buscar...">
               <button type="submit" class="btnstyle"><i class="searchicon fa fa-search" aria-hidden="true"></i></button>
           </form>
@@ -67,11 +66,15 @@
 
 
     <!-- Start Slider -->
-    <div class="container-fluid slider d-flex flex-column justify-content-center align-items-center header text-white">
+    <div id="slider" class="container-fluid slider text-white" >
+      <br><br>
       <div class="text-center sliderText">
-        <h3 class="hidden-xs-down mt-5">Freak Lab cursos</h3>
-        <h1 class="display-4 mt-5">¿Deseas aprender de forma rápida?</h1>
-        <p class="lead mt-5">Freak Lab 69 te ofrece múltiples cursos sobre ciencia y programación</p>
+        <h1 class="display-4 mt-5 p-3">Freaklab cursos</h1>
+        <hr color="white">
+        <div class="description">
+          <h2 class="display-3 mt-5">¿Deseas aprender de forma rápida?</h2>
+          <p class="lead mt-2">Freak Lab 69 te ofrece múltiples cursos sobre ciencia y programación</p>
+        </div>
       </div>
       <div class="down text-white">
         <a href="#description" class="downLink"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i></a>
@@ -79,6 +82,11 @@
     </div>
     <!-- End slider -->
 
+    <div id="header-mobile" class="header-mobile text-center" >
+      <div>
+          <img src="assets/img/main/freaklabcoursesmobile.png" alt="" class="img-fluid">
+      </div>
+    </div>
 
     <!-- Start description-->
     <section id="description">
@@ -100,14 +108,14 @@
               modelamiento de datos.
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 swing">
             <div class="card text-center">
               <img class="featurette-image img-fluid mx-auto rounded" src="assets/img/main/code.jpeg" alt="Generic placeholder image">
               <div class="card-block">
                 <p class="card-text lead">
                  Cursos sobre programación.
                 </p>
-                <a href="#allCourses" class="btn btn-primary">Ver todos los cursos</a>
+                <a href="#allCourses" class="btn btn-primary btn-hover">Ver todos los cursos</a>
               </div>
             </div>
           </div>
@@ -148,7 +156,9 @@
                   reconomiento de patrones, por lo que las aplicaciones más habituales de la IA son el 
                   tratamiento de datos y la identificacón de sistemas.
                 </p>
-                <a href="listaCursos/ia.html" class="btn btn-primary">Ver más...</a>
+                <div class="text-center">
+                  <a href="listaCursos/ia.html" class="btn btn-primary btn-hover see-more">Ver más...</a>
+                </div>
               </div>
             </div>
             <!-- End course IA -->
@@ -180,7 +190,9 @@
                   a nivel mundial. Su fácil lectura y generación de scripts lo hace una opción viable en 
                   el desarrollo investigativo e industrial.
                 </p>
-                <a href="listaCursos/python.html" class="btn btn-primary">Ver más...</a>
+                <div class="text-center">
+                  <a href="listaCursos/python.html" class="btn btn-primary btn-hover see-more">Ver más...</a>
+                </div>                
               </div>
             </div>
             <!-- End course Python -->
@@ -219,7 +231,7 @@
       <div class="container mt-5 pb-5">
         <h2 class="text-center">Todos los cursos</h2>
         <div class="row mt-5">
-          <div class="col-md-4">
+          <div class="col-md-4 card-grow">
             <div class="card cardCourses">
               <img class="card-img-top cardImg" src="assets/img/cursos/IaMain.jpg" alt="Card image cap">
               <div class="card-block text-center">
@@ -227,11 +239,11 @@
                 <p class="card-text">
                   La inteligencia artificial (IA) es una disciplina relacionada con la teoría de la computación cuyo objetivo es ...
                 </p>
-                <a href="listaCursos/ia.html" class="btn btn-primary">Ver más información...</a>
+                <a href="listaCursos/ia.html" class="btn btn-primary btn-hover">Ver más información...</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 card-grow">
             <div class="card">
               <img class="card-img-top cardImg" src="assets/img/cursos/Py.png" alt="Card image cap">
               <div class="card-block text-center">
@@ -239,11 +251,11 @@
                 <p class="card-text">
                   es una nueva versión del lenguaje que es incompatible con la línea de versiones 2.x. El lenguaje es mayormente el mismo, pero muchos detalles, sobre todo cómo incorporan objetos como diccionarios ...
                 </p>
-                <a href="listaCursos/python.html" class="btn btn-primary">Ver más información...</a>
+                <a href="listaCursos/python.html" class="btn btn-primary btn-hover">Ver más información...</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 card-grow">
             <div class="card">
               <img class="card-img-top cardImg" src="assets/img/cursos/Java.jpg" alt="Card image cap">
               <div class="card-block text-center">
@@ -251,7 +263,9 @@
                 <p class="card-text">
                   Java 8 es un revolucionario lanzamiento de la plataforma de desarrollo # 1 del mundo. Incluye una gran actualización del modelo de programación Java y una evolución coordinada de la JVM ...
                 </p>
-                <a id="btn-java" class="btn btn-primary text-white">Ver más información...</a>
+                <a id="btn-java" class="btn btn-primary text-white btn-hover" data-toggle="modal" data-target="#site-building">Ver más información...</a>
+                <!-- Button trigger modal -->
+                
               </div>
             </div>
           </div>
@@ -260,19 +274,40 @@
     </section>
     <!-- End All Courses -->
 
+    <!-- Modal -->
+    <div class="modal" id="site-building" tabindex="-1" role="dialog" aria-labelledby="site-building" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="site-building">Curso en construcción</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/main/sitio-en-construccion.jpg" alt="" class="img-fluid">
+            <hr>
+            <div class="alert alert-warning text-center" role="alert">
+              <strong>Alerta!</strong> El curso actualmente se encuentra en construcción.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
    <!-- Start footer-->
     <footer class="container-fluid bg-inverse text-center text-white py-2">
       <div class="social-icons">
        <div class="row">
-        <div class="col-4"></div>
-        <div class=" col-2 conticon">
+        <div class="col-sm-12 col-md-4"></div>
+        <div class="col-sm-6 col-md-2 conticon">
           <a class="ai" href="https://www.facebook.com/flab69/" target="_blank">
             <i class="fa fa-facebook fa-2x faicon" aria-hidden="true"></i>
             <strong class="lead ml-3">Facebook</strong>
           </a>
         </div>
-        <div class="col-2 conticon">
+        <div class="col-sm-6 col-md-2 conticon">
           <a class="ai" href="https://plus.google.com/u/3/115040459334449967797" target="_blank">
             <i class="fa fa-google-plus-official fa-2x goicon" aria-hidden="true"></i>
             <strong class="lead ml-3">Google+</strong>
@@ -281,26 +316,33 @@
         <div class="col-4"></div>
        </div>
       </div>
-      <p>&copy; 2017 freaklab69.com<p>
+      <p>&copy; 2018 freaklab69.com<p>
     </footer>
     <!-- End footer -->
 
+    
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="assets/js/jquery-3.2.1.js"></script>
     <script src="assets/js/tether.js"></script>
    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+   <script>
+      $(document).ready(function(){
+        var slider = $("#slider");
+        var headerMobile = $("#header-mobile");
+        var width = $(window).width();
+        
+        slider.hide();
+        headerMobile.hide();
+    
+        if(width < 776){
+          headerMobile.show();
+        } else {
+          slider.show();
+        }
+      });
+    </script>
+
   </body>
-  <script>
-    var btnSearch = $("#btn-search");
-    var btnJava = $("#btn-java");
-
-    if($(window).width() < 776){
-      btnSearch.hide();
-    }
-
-    btnJava.click(function(){
-      alert("El curso Java aún se encuentra en construcción...");
-    });
-  </script>
 </html>
