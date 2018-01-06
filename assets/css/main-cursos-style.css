@@ -81,23 +81,6 @@
   height: 70px;
   background-color: rgba(0,0,0,0.8);
 }
-@media(max-width: 767px) {
-  .navbar{
-    height: auto;
-  }
-  .btn-search{
-    visibility: hidden;
-  }
-  .nav-link{
-    width: 100vw;
-  }
-  .nav-item{
-    text-align: center;
-  }
-  .header-mobile{
-    visibility: visible;
-  }
-}
 .nav-item{
   width: 15vw;
   height: 70px;
@@ -202,7 +185,6 @@
   height: 100vh;
   background-image: url("../img/main/bg.jpg");
   background-attachment: fixed;
-  /*opacity: 0.6;*/
 }
 .sliderText{
   margin-right: auto;
@@ -228,14 +210,6 @@
   animation: swing 1s ease;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-}
-@media(max-width: 767px) {
-  .sliderText{
-    margin-top: 70px;
-    background-color: rgba(0,0,0,0.8);
-    height: 100vh;
-    width: 100vw;
-  }
 }
 .down{
   margin-left: auto;
@@ -269,7 +243,7 @@
   -ms-transform: scale(1.3, 1);
   transform: scale(1.3, 1);
 }
-.lastAppend{
+.last-append{
   background-color: rgba(0,0,0,0.05);
 }
 .cardCourses{
@@ -290,6 +264,12 @@
 .cardImg{
   width: 100%;
   height: 200px;
+}
+.footer{
+  background-color: rgba(0,0,0,0.8);
+}
+.icon{
+  margin-bottom: 2vh;
 }
 .social-icons{
   margin-top: 2%;
@@ -318,4 +298,49 @@
 .ai:hover {
   text-decoration: none;
   color: #578EFF;
+}
+
+/*******************************************************/
+      /*PARA PANTALLAS MENORES A 767PX DE ANCHO*/
+/*******************************************************/
+@media(max-width: 767px) {
+  .navbar{
+    height: auto;
+  }
+  .topmenusearch{
+    visibility: hidden;
+  }
+  .nav-link{
+    width: 100vw;
+  }
+  .nav-item{
+    text-align: center;
+  }
+  .header-mobile{
+    visibility: visible;
+  }
+  .sliderText{
+    margin-top: 70px;
+    background-color: rgba(0,0,0,0.8);
+    height: 100vh;
+    width: 100vw;
+  }
+  .advertisements{
+    margin-top: 5vh;
+    margin-left: 0%;
+  }
+  .advertisements > h2 {
+    text-align: center;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+  }
+  .last-append{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+  }
+  .all-courses{
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-top:-100px;
+  }
 }
